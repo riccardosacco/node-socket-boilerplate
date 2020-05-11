@@ -2,11 +2,15 @@
   "name": "socket-boilerplate",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "connector/server.js",
   "scripts": {
     "start": "tsc && node dist/server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "tsc": "tsc"
+    "tsc": "tsc",
+    "preversion": "git add .",
+    "major": "npm version major -f -m \"* Update to version %s\"",
+    "minor": "npm version minor -f -m \"* Update to version %s\"",
+    "patch": "npm version patch -f -m \"* Update to version %s\""
   },
   "repository": {
     "type": "git",
